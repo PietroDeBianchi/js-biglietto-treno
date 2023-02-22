@@ -15,7 +15,7 @@ myAge = Number(myAge);
 // Calculate the cost based on the distance and rate
 let cost = myDistance * 0.21;
 
-if (Myage < 18) {
+if (myAge < 18) {
     cost *= 0.8; // Apply a 20% discount for users under 18
   } else if (age >= 65) {
     cost *= 0.6; // Apply a 40% discount for users 65 and over
