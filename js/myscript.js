@@ -25,7 +25,20 @@ if (myAge < 18) {
 
 
 // Display the cost to the user
-const userTicket = document.getElementById("ticket-info");
-userTicket.textContent = "Hello the cost of your ticket is " + myCost.toFixed(2) + "€.";
 
-console.log("The cost for the ticket is " + myCost.toFixed(2) + "€.");
+console.log("The cost for the ticket is " + myCost.toFixed(2) + "€");
+
+const userTicket = document.getElementById("ticket-info");
+
+// experiment
+const costString = "Hello, the cost of your ticket is " + myCost.toFixed(2) + "€";
+let i = 0;
+function typeWriter() {
+  if (i < costString.length) {
+    userTicket.textContent += costString.charAt(i);
+    i++;
+    setTimeout(typeWriter, 50); // Delay between each character, in milliseconds
+  }
+}
+
+typeWriter();
