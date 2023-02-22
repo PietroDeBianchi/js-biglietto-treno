@@ -13,13 +13,16 @@ myAge = Number(myAge);
 
 
 // Calculate the cost based on the distance and rate
-let cost = myDistance * 0.21;
+let myCost = myDistance * 0.21;
 
 if (myAge < 18) {
-    cost *= 0.8; // Apply a 20% discount for users under 18
+    myCost *= 0.8; // Apply a 20% discount for users under 18
   } else if (myAge >= 65) {
-    cost *= 0.6; // Apply a 40% discount for users 65 and over
+    myCost *= 0.6; // Apply a 40% discount for users 65 and over
 }
 
 // Display the cost to the user
-console.log("The cost for the ticket is" + cost + " €.");
+const userTicket = document.getElementById("ticket-info");
+userTicket.textContent = "Hello the cost of your ticket is " + myCost + " €.";
+
+console.log("The cost for the ticket is " + myCost + " €.");
