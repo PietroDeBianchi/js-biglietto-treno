@@ -1,9 +1,9 @@
 
-/* DATI
-0.21€/Km tariffa base biglietto treno
--20% sconto under 18 anni
--40% sconto over 65
-? = Calcola il costo del biglietto */
+/* Data
+0.21€/Km ticket's cost for km
+-20% discount under 18
+-40% discount  over 65
+? = ticket's cost normal and discount */
 
 let myDistance = prompt("How many kilometers do you have to travel?");
 let myAge = prompt("How old are you");
