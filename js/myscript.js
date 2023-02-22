@@ -26,7 +26,7 @@ if (myAge < 18) {
 
 // Display the cost to the user
 
-console.log("The cost for the ticket is " + myCost.toFixed(2) + "€");
+console.log("The cost for the ticket is " + myCost.toFixed(2) + "€.");
 
 const userTicket = document.getElementById("ticket-info");
 
